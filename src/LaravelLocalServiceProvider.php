@@ -2,6 +2,7 @@
 
 namespace AppBut\LaravelLocal;
 
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelLocalServiceProvider extends ServiceProvider
@@ -32,7 +33,6 @@ class LaravelLocalServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
     }
 
     /**
@@ -42,7 +42,10 @@ class LaravelLocalServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        if ($this->app->isLocal()) {
+            $this->registerServiceProviders();
+            $this->registerFacadeAliases();
+        }
     }
 
     /**
