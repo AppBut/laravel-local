@@ -5,10 +5,13 @@ namespace AppBut\LaravelLocal;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class LaravelLocalServiceProvider
+ *
+ * @package AppBut\LaravelLocal
+ */
 class LaravelLocalServiceProvider extends ServiceProvider
 {
-    protected $defer = false;
-
     /**
      * List of Local Environment Providers
      * @var array
