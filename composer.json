@@ -1,5 +1,5 @@
 {
-  "name": "appbut/LaravelLocal",
+  "name": "appbut/laravel-local",
   "type": "library",
   "description": "Provides easy setup for local dev environments with certain tools already setup",
   "keywords": [
