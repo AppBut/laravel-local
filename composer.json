@@ -1,12 +1,12 @@
 {
-  "name": "AppBut/LaravelLocal",
+  "name": "appbut/LaravelLocal",
   "type": "library",
   "description": "Provides easy setup for local dev environments with certain tools already setup",
   "keywords": [
-    "AppBut",
+    "appbut",
     "LaravelLocal"
   ],
-  "homepage": "https://github.com/AppBut/laravel-local",
+  "homepage": "https://github.com/appbut/laravel-local",
   "license": "MIT",
   "authors": [
     {
