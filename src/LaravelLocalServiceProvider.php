@@ -1,0 +1,68 @@
+<?php
+
+namespace AppBut\LaravelLocal;
+
+use Illuminate\Support\ServiceProvider;
+
+class LaravelLocalServiceProvider extends ServiceProvider
+{
+    protected $defer = false;
+
+    /**
+     * List of Local Environment Providers
+     * @var array
+     */
+    protected $localProviders = [
+        'Barryvdh\Debugbar\ServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider'
+    ];
+
+    /**
+     * List of only Local Environment Facade Aliases
+     * @var array
+     */
+    protected $facadeAliases = [
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
+    ];
+
+    /**
+     * Perform post-registration booting of services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+
+    }
+
+    /**
+     * Register any package services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+
+    }
+
+    /**
+     * Load local service providers
+     */
+    protected function registerServiceProviders()
+    {
+        foreach ($this->localProviders as $provider) {
+            $this->app->register($provider);
+        }
+    }
+
+    /**
+     * Load additional Aliases
+     */
+    public function registerFacadeAliases()
+    {
+        $loader = AliasLoader::getInstance();
+        foreach ($this->facadeAliases as $alias => $facade) {
+            $loader->alias($alias, $facade);
+        }
+    }
+}
