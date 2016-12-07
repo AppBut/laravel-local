@@ -1,7 +1,9 @@
 # Laravel-Local
 
-[![Software License][ico-license]](LICENSE.md)
-[![Total Downloads][ico-downloads]][link-downloads]
+[![Software License][ico-license]](LICENSE.md) 
+[![Code Climate](https://codeclimate.com/github/appbut/laravel-local/badges/gpa.svg)](https://codeclimate.com/github/appbut/laravel-local) 
+[![Test Coverage](https://codeclimate.com/github/appbut/laravel-local/badges/coverage.svg)](https://codeclimate.com/github/appbut/laravel-local/coverage)
+
 
 Provides easy setup for local dev environments with certain tools already setup
 
