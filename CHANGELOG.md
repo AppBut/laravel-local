@@ -1,13 +1,14 @@
 # Changelog
 
-All Notable changes to `:package_name` will be documented in this file.
+All Notable changes to `laravel-local` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
+## [dev-master] - 2016-12-06
 
 ### Added
-- Nothing
+- Ability to install laravel-ide-helper and run generation and meta scripts
+- Ability to install and enable the laravel-debugbar
 
 ### Deprecated
 - Nothing

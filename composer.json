@@ -4,7 +4,7 @@
   "description": "Provides easy setup for local dev environments with certain tools already setup",
   "keywords": [
     "appbut",
-    "LaravelLocal"
+    "laravel-local"
   ],
   "homepage": "https://github.com/appbut/laravel-local",
   "license": "MIT",
@@ -39,7 +39,15 @@
   "scripts": {
     "test": "phpunit",
     "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
-    "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+    "post-install-cmd": [
+      "php artisan ide-helper:generate",
+      "php artisan ide-helper:meta"
+    ],
+    "post-update-cmd": [
+      "php artisan ide-helper:generate",
+      "php artisan ide-helper:meta"
+    ]
   },
   "extra": {
     "branch-alias": {
