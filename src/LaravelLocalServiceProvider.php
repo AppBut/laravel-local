@@ -19,7 +19,6 @@ class LaravelLocalServiceProvider extends ServiceProvider
     protected $localProviders = [
         'Barryvdh\Debugbar\ServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'Laralib\L5scaffold\GeneratorsServiceProvider',
         'Laracasts\Generators\GeneratorsServiceProvider'
     ];
 
