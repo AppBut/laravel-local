@@ -20,8 +20,7 @@ class LaravelLocalServiceProvider extends ServiceProvider
         'Barryvdh\Debugbar\ServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Laralib\L5scaffold\GeneratorsServiceProvider',
-        'Laracasts\Generators\GeneratorsServiceProvider',
-        'JeroenG\Packager\PackagerServiceProvider',
+        'Laracasts\Generators\GeneratorsServiceProvider'
     ];
 
     /**
